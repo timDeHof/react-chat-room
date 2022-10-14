@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
-export const MessageContainer = styled.div`
-  border: 1px solid turquoise;
-  border-radius: 10px;
-  background-color: turquoise;
-  color: white;
-  max-width: 400px;
+export const MessageItem = styled.p`
+  text-align: left;
+  font-size: 1rem;
+  margin: 0;
+  margin-left: 1em;
 `;
