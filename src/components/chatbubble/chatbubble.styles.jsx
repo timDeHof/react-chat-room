@@ -3,13 +3,12 @@ import styled from "styled-components";
 export const baseBubble = styled.div`
   max-width: 255px;
   word-wrap: break-word;
-  margin: 1em;
-  line-height: 24px;
   position: relative;
   padding: 10px 20px;
   border-radius: 25px 25px 0 25px;
   color: white;
   border: 3px solid black;
+  margin-bottom: 25px;
 
   &:before,
   &:after {
@@ -23,9 +22,10 @@ export const sent = styled(baseBubble)`
   color: #fff;
   background: turquoise;
   align-self: flex-end;
+  margin-right: 20px;
 
   &:before {
-    right: -7px;
+    right: -8px;
     width: 20px;
     height: 27px;
     background-color: turquoise;
@@ -46,11 +46,12 @@ export const received = styled(baseBubble)`
   background: lightgray;
   align-self: flex-start;
   border-radius: 25px 25px 25px 0;
+  margin-left: 20px;
 
   &:before {
-    left: -7px;
+    left: -12px;
     height: 27px;
-    width: 20px;
+    width: 22px;
     background-color: lightgray;
     border-bottom-right-radius: 16px;
     border-bottom: 3px solid black;
