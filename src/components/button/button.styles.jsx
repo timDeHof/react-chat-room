@@ -7,11 +7,11 @@ export const BaseButton = styled.button`
   letter-spacing: 0.5px;
   line-height: 50px;
   padding: 0 35px 0 35px;
-  font-size: 15px;
+  font-size: 1em;
   background-color: black;
   color: white;
   text-transform: uppercase;
-  font-family: "opens sans";
+  font-family: "Open Sans", sans-serif;
   font-weight: bolder;
   border: none;
   cursor: pointer;
@@ -21,7 +21,7 @@ export const BaseButton = styled.button`
   &:hover {
     background-color: white;
     color: black;
-    border: 1px solid black;
+    border: 3px solid black;
   }
 `;
 
