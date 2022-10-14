@@ -5,7 +5,10 @@ const MessageInput = () => {
   return (
     <FormGroup>
       <Input type='text' name='messageInput' placeholder='enter message here' />
-      <Button buttonType={BUTTON_TYPES_CLASSES.base} type='submit'>
+      <Button
+        style={{ borderRadius: "0 25px 25px 0" }}
+        buttonType={BUTTON_TYPES_CLASSES.base}
+        type='submit'>
         Send
       </Button>
     </FormGroup>
