@@ -2,7 +2,7 @@ import React from "react";
 import Bubble, {
   BUBBLE_TYPES_CLASSES,
 } from "../chatbubble/chatbubble.component";
-import { MessageItem } from "./message.styles";
+import { MessageItem, UserName } from "./message.styles";
 const Message = ({ user, message, timestamp }) => {
   return (
     <Bubble
@@ -11,7 +11,7 @@ const Message = ({ user, message, timestamp }) => {
           ? BUBBLE_TYPES_CLASSES.sent
           : BUBBLE_TYPES_CLASSES.received
       }>
-      <MessageItem>{user}</MessageItem>
+      <UserName>{user}</UserName>
       <MessageItem>{message}</MessageItem>
       <MessageItem>{timestamp}</MessageItem>
     </Bubble>
